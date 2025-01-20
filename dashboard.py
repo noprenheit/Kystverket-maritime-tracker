@@ -10,6 +10,24 @@ def main():
         initial_sidebar_state="expanded"
     )
 
+    st.markdown(
+        """
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h4>Created by <b>Selcuk Oner</b></h4>
+            <p style="font-size: small;">
+                <a href="https://linkedin.com/in/selcukoner" target="_blank">LinkedIn</a> • 
+                <a href="https://github.com/selcukoner" target="_blank">GitHub</a> • 
+                <a href="https://www.selcukoner.com" target="_blank">Website</a>
+            </p>
+            <p style="font-size: small; color: gray;">
+            This dashboard utilizes maritime traffic data provided by <b>Kystverket</b>. 
+            The dataset displayed is based on records from January 2022.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     # custom CSS
     st.markdown(
         """
