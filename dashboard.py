@@ -316,5 +316,12 @@ def main():
             )
             st.dataframe(route_counts_display)
 
+        if "_sa_injected" not in st.session_state:
+            st.session_state["_sa_injected"] = True
+            st.markdown(
+                '<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>',
+                unsafe_allow_html=True,
+            )
+
 if __name__ == "__main__":
     main()
